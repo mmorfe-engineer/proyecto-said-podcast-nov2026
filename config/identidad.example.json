@@ -1,0 +1,13 @@
+{
+  "institution": "Nombre de la institución",
+  "class": "Identificación de la clase",
+  "author": "Ernesto Sabato",
+  "title": "EL TÚNEL",
+  "subtitle": "Cuando el control se disfraza de amor",
+  "participants": {
+    "psicologia": {"name":"Integrante 1","role":"Análisis psicológico"},
+    "moderador": {"name":"Integrante 2","role":"Moderador"},
+    "perspectiva": {"name":"Integrante 3","role":"Perspectiva narrativa"},
+    "literatura": {"name":"Integrante 4","role":"Análisis literario"}
+  }
+}

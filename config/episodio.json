@@ -1,0 +1,282 @@
+{
+  "title": "EL TÚNEL",
+  "subtitle": "Cuando el control se disfraza de amor",
+  "institution": "Nombre de la institución",
+  "edition": "Una conversación literaria · 2026",
+  "palette": {
+    "coal": "#15171B",
+    "ivory": "#E9E2D4",
+    "rust": "#A74739",
+    "slate": "#344451"
+  },
+  "fonts": {
+    "serif": "DejaVu Serif",
+    "sans": "Lato"
+  },
+  "audio": {
+    "lufs": -16,
+    "peak": -1.5,
+    "sample_rate": 48000
+  },
+  "participants": {
+    "moderador": {
+      "name": "",
+      "role": "Moderador"
+    },
+    "literatura": {
+      "name": "",
+      "role": "Análisis literario"
+    },
+    "perspectiva": {
+      "name": "",
+      "role": "Perspectiva narrativa"
+    },
+    "psicologia": {
+      "name": "",
+      "role": "Análisis psicológico"
+    }
+  },
+  "look": {
+    "1": [
+      0.025,
+      0.98,
+      0.96
+    ],
+    "2": [
+      0.018,
+      1.01,
+      0.94
+    ],
+    "3": [
+      0.008,
+      1.015,
+      0.91
+    ],
+    "4": [
+      0.012,
+      1.01,
+      0.91
+    ],
+    "5": [
+      0.012,
+      1.015,
+      0.92
+    ],
+    "6": [
+      0.005,
+      1.015,
+      0.92
+    ],
+    "7": [
+      0.005,
+      1.01,
+      0.92
+    ],
+    "8": [
+      0.004,
+      1.01,
+      0.92
+    ]
+  },
+  "timeline": [
+    {
+      "id": "apertura",
+      "card": "open",
+      "duration": 8
+    },
+    {
+      "id": "gancho",
+      "clip": 2,
+      "in": 14.45,
+      "out": 19.5,
+      "zoom": 1.035
+    },
+    {
+      "id": "introduccion",
+      "clip": 1,
+      "in": 4.4,
+      "out": 48.3,
+      "labels": [
+        [
+          0.8,
+          "moderador"
+        ]
+      ]
+    },
+    {
+      "id": "literatura",
+      "clip": 1,
+      "in": 50.1,
+      "out": 64.25,
+      "labels": [
+        [
+          0.65,
+          "literatura"
+        ]
+      ],
+      "cover": [
+        1,
+        50.5
+      ]
+    },
+    {
+      "id": "voces",
+      "clip": 1,
+      "in": 128.35,
+      "out": 149.05,
+      "labels": [
+        [
+          0.65,
+          "perspectiva"
+        ],
+        [
+          11.0,
+          "psicologia"
+        ]
+      ],
+      "cover": [
+        1,
+        130.0
+      ]
+    },
+    {
+      "id": "capitulo-1",
+      "card": "chapter",
+      "duration": 2.2,
+      "kicker": "CAPÍTULO I",
+      "title": "La violencia empieza antes"
+    },
+    {
+      "id": "violencia",
+      "clip": 2,
+      "in": 19.5,
+      "out": 25.0
+    },
+    {
+      "id": "escala",
+      "clip": 2,
+      "in": 45.0,
+      "out": 66.35,
+      "zoom": 1.025
+    },
+    {
+      "id": "capitulo-2",
+      "card": "chapter",
+      "duration": 2.3,
+      "kicker": "CAPÍTULO II",
+      "title": "La obsesión de poseer",
+      "portrait": [
+        3,
+        11.4
+      ]
+    },
+    {
+      "id": "obsesion",
+      "clip": 3,
+      "in": 4.8,
+      "out": 47.95
+    },
+    {
+      "id": "control",
+      "clip": 3,
+      "in": 55.95,
+      "out": 59.55,
+      "zoom": 1.03
+    },
+    {
+      "id": "capitulo-3",
+      "card": "chapter",
+      "duration": 2.2,
+      "kicker": "CAPÍTULO III",
+      "title": "Cuando el control parece amor"
+    },
+    {
+      "id": "postura",
+      "clip": 4,
+      "in": 3.2,
+      "out": 30.6
+    },
+    {
+      "id": "acoso",
+      "clip": 5,
+      "in": 16.75,
+      "out": 93.55,
+      "callout": [
+        22,
+        "Insistencia · vigilancia · aislamiento"
+      ]
+    },
+    {
+      "id": "capitulo-4",
+      "card": "chapter",
+      "duration": 2.45,
+      "kicker": "CAPÍTULO IV",
+      "title": "¿Quién nos cuenta la historia?",
+      "portrait": [
+        6,
+        29.5
+      ]
+    },
+    {
+      "id": "narrador",
+      "clip": 6,
+      "in": 0.0,
+      "out": 140.7,
+      "callout": [
+        51,
+        "El narrador y su versión"
+      ]
+    },
+    {
+      "id": "agradecimientos",
+      "clip": 7,
+      "in": 5.75,
+      "out": 18.05
+    },
+    {
+      "id": "pregunta-final",
+      "clip": 8,
+      "in": 7.85,
+      "out": 38.85
+    },
+    {
+      "id": "creditos",
+      "card": "close",
+      "duration": 6.5
+    },
+    {
+      "id": "detras-de-camaras",
+      "card": "bloopers",
+      "duration": 2.6
+    },
+    {
+      "id": "extra-1",
+      "blooper": 1,
+      "in": 0.1,
+      "out": 10.9
+    },
+    {
+      "id": "extra-3",
+      "blooper": 3,
+      "in": 0.4,
+      "out": 11.5
+    },
+    {
+      "id": "extra-5",
+      "blooper": 5,
+      "in": 0.55,
+      "out": 23.8
+    },
+    {
+      "id": "extra-6",
+      "blooper": 6,
+      "in": 1.15,
+      "out": 14.5
+    },
+    {
+      "id": "tarjeta-final",
+      "card": "end",
+      "duration": 3.5
+    }
+  ]
+}

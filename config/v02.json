@@ -1,0 +1,27 @@
+{
+  "timeline": [
+    {"id":"apertura","card":"open","duration":14,"next":[1,4.4]},
+    {"id":"presentacion","clip":1,"in":4.4,"out":64.55,"labels":[[0.8,"moderador"],[46.2,"literatura"]]},
+    {"id":"presentacion-continuacion","clip":1,"in":128.35,"out":149.15,"labels":[[0.65,"perspectiva"],[11.1,"psicologia"]],"cover":[1,130]},
+    {"id":"capitulo-1","card":"chapter","duration":7.1,"number":1,"title":"La violencia empieza antes","deck":"El maltrato no comienza necesariamente con una agresión física: también puede manifestarse mediante el control y la manipulación.","prev":[1,149],"next":[2,0.45]},
+    {"id":"violencia","clip":2,"in":0.45,"out":66.58},
+    {"id":"capitulo-2","card":"chapter","duration":7.1,"number":2,"title":"La obsesión de poseer","deck":"Los celos y la necesidad de dominio transforman los vínculos afectivos en relaciones de dependencia y aislamiento.","prev":[2,66.45],"next":[3,4.62]},
+    {"id":"obsesion","clip":3,"in":4.62,"out":59.78},
+    {"id":"capitulo-3","card":"chapter","duration":7.3,"number":3,"title":"Cuando el control parece amor","deck":"Una lectura crítica permite distinguir entre el afecto genuino y las conductas de acoso presentadas como gestos románticos.","prev":[3,59.65],"next":[4,3.15]},
+    {"id":"postura","clip":4,"in":3.15,"out":43.82},
+    {"id":"acoso","clip":5,"in":16.7,"out":93.61},
+    {"id":"capitulo-4","card":"chapter","duration":7.1,"number":4,"title":"¿Quién cuenta la historia?","deck":"La perspectiva del narrador condiciona nuestra interpretación y nos invita a recuperar las voces que permanecen silenciadas.","prev":[5,93.45],"next":[6,0]},
+    {"id":"narrador","clip":6,"in":0,"out":141.25},
+    {"id":"despedidas","clip":7,"in":5.63,"out":56.9},
+    {"id":"epilogo","card":"bridge","duration":5.2,"title":"Una pregunta que permanece","prev":[7,56.65],"next":[8,7.82]},
+    {"id":"reflexion","clip":8,"in":7.82,"out":38.88},
+    {"id":"creditos","card":"close","duration":7,"prev":[8,38.6]},
+    {"id":"detras-de-camaras","card":"bloopers","duration":7.2,"title":"DETRÁS DE CÁMARAS","deck":"Porque toda buena conversación tiene momentos que no estaban en el guion.","portrait":[3,9]},
+    {"id":"extra-reinicio","blooper":3,"in":0.5,"out":11.45},
+    {"id":"extra-pregunta","blooper":"a","in":4.9,"out":18.5},
+    {"id":"extra-coro","blooper":"b","in":8.8,"out":15.6},
+    {"id":"extra-cierre","blooper":"c","in":0.55,"out":7.05},
+    {"id":"extra-espontaneo","blooper":5,"in":10.15,"out":23.65},
+    {"id":"agradecimiento","card":"end","duration":11}
+  ]
+}

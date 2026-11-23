@@ -1,0 +1,10 @@
+/podcast_videos_raw/
+/media/
+/exports/
+/work/
+/bloopers/
+/renders/
+/subtitles/
+__pycache__/
+
+/config/*.local.json
