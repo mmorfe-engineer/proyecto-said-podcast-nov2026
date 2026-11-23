@@ -194,6 +194,35 @@ def card_paths(rows, old_paths, logo_path, logo):
     return paths
 
 
+def card_contact(rows):
+    """Show each finished card at reading opacity, including both opening beats."""
+    portrait = OUT/'recursos/detras-de-camaras/arte.png'
+    if not portrait.exists():
+        shutil.copytree(ROOT/'renders/v02/recursos/detras-de-camaras', portrait.parent,
+                        dirs_exist_ok=True)
+    samples = []
+    for row in rows:
+        if 'card' not in row:
+            continue
+        name = row['id']
+        artwork = OUT/'recursos'/name
+        if row['card'] == 'open':
+            samples.extend([('apertura', artwork/'muestra-2.jpg'),
+                            ('integrantes', artwork/'muestra-4.jpg')])
+        elif row['card'] == 'bloopers':
+            samples.append((name, portrait))
+        else:
+            samples.append((name, artwork/'muestra-3.jpg'))
+    sheet = Image.new('RGB', (1280, 204*((len(samples)+3)//4)), '#15171b')
+    draw = ImageDraw.Draw(sheet)
+    for index, (name, path) in enumerate(samples):
+        x, y = index%4*320, index//4*204
+        with Image.open(path) as image:
+            sheet.paste(image.resize((320, 180), Image.Resampling.LANCZOS), (x, y))
+        draw.text((x+8, y+184), name, fill='#eddfd3')
+    sheet.save(OUT/'hoja-cortinas.jpg', quality=92)
+
+
 def assemble(paths, rows, total):
     playlist = WORK/'concat.txt'
     playlist.write_text(''.join(f"file '{path}'\n"
@@ -322,6 +351,7 @@ def main():
         card_paths(selection, old_paths, logo_path, logo)
         return
     paths = card_paths(rows, old_paths, logo_path, logo)
+    card_contact(rows)
     audio(paths, before, rows, total)
     assemble(paths, rows, total)
 

@@ -12,7 +12,7 @@ Videopodcast de Literatura del Colegio Humboldt Caracas sobre la violencia de g�
 ![Auditoría local](https://img.shields.io/badge/auditor%C3%ADa-local-5f6368)
 ![Entrega local](https://img.shields.io/badge/estado-entrega%20local-8c4f42)
 
-La prueba semestral I se evalúa en cuatro ejes. La [matriz](docs/V03_MATRIZ_RUBRICA.md) vincula los doce criterios con intervenciones y tiempos V03, diferencia cita, paráfrasis e interpretación y registra los límites del cotejo.
+La [auditoría audiovisual](docs/V03_AUDITORIA_AUDIOVISUAL.md) y la [EDL](docs/V03_EDL.md) documentan el conformado de 12:10.433. La prueba semestral I se evalúa en cuatro ejes. La [matriz](docs/V03_MATRIZ_RUBRICA.md) vincula los doce criterios con intervenciones y tiempos V03, diferencia cita, paráfrasis e interpretación y registra los límites del cotejo.
 
 | Eje | Indicadores |
 |---|---|
