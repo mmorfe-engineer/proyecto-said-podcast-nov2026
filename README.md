@@ -1,10 +1,10 @@
 ![Portada editorial de El túnel](docs/galeria-v03/apertura.jpg)
 
-# EL TÚNEL · V03
+# EL TÚNEL · V03.1
 
 Videopodcast de Literatura del Colegio Humboldt Caracas sobre la violencia de género en la novela de Ernesto Sabato. **Cuando el control se disfraza de amor.** La edición conserva la conversación aprobada e incorpora capítulos, cápsulas de lectura, identificación institucional y un cierre renovado.
 
-![Versión V03](https://img.shields.io/badge/versi%C3%B3n-V03-8c4f42)
+![Versión V03.1](https://img.shields.io/badge/versi%C3%B3n-V03.1-8c4f42)
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776ab)
 ![FFmpeg](https://img.shields.io/badge/FFmpeg-libx264%20%2F%20libass-168446)
 ![Resolución 1920×1080](https://img.shields.io/badge/resoluci%C3%B3n-1920%C3%971080-353740)
@@ -20,6 +20,23 @@ La [auditoría audiovisual](docs/V03_AUDITORIA_AUDIOVISUAL.md) y la [EDL](docs/V
 | Perspectiva crítica | Postura frente a la violencia, vínculo con la realidad y reflexión del espectador |
 | Discurso audiovisual | Estructura, lenguaje y ritmo |
 | Producción | Audio, video y uso de los recursos audiovisuales |
+
+## V03.1 · Continuidad y sonido
+
+La revisión sustituye las mezclas de máscara entre entrevistas y cortinas por cortes directos. El título y la mancheta entran con contraste de lectura. Una partitura original de piano y celesta acompaña los capítulos y las cápsulas. El último blooper recupera su desenlace. La [guía de producción](docs/v03_1/produccion.md) detalla la reproducción y las comprobaciones.
+
+[Escuchar la firma musical de apertura](docs/v03_1/firma-musical.ogg)
+
+![Entrada del capítulo II en V03.1](docs/v03_1/entrada-capitulo-ii.jpg)
+
+```mermaid
+flowchart LR
+  A[EDL y mezcla aprobada V03] --> C[Conformado V03.1]
+  B[Cortinas y firma musical] --> R[Reel de los empalmes]
+  R --> C
+  C --> M[Máster limpio y subtitulado]
+  M --> Q[Decodificación y verificación de continuidad]
+```
 
 ## Galería
 
