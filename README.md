@@ -2,7 +2,7 @@
 
 # EL TÚNEL
 
-**Cuando el control se disfraza de amor**  
+**Cuando el control se disfraza de amor**
 Podcast grupal de análisis literario sobre la novela de Ernesto Sabato.
 
 `V02` · `Python` · `Pillow` · `FFmpeg` · `1080p / 30 fps`
