@@ -23,9 +23,13 @@ La [auditoría audiovisual](docs/V03_AUDITORIA_AUDIOVISUAL.md) y la [EDL](docs/V
 
 ## V03.1 · Continuidad y sonido
 
-La revisión sustituye las mezclas de máscara entre entrevistas y cortinas por cortes directos. El título y la mancheta entran con contraste de lectura. Una partitura original de piano y celesta acompaña los capítulos y las cápsulas. El último blooper recupera su desenlace. La [guía de producción](docs/v03_1/produccion.md) detalla la reproducción y las comprobaciones.
+La revisión sustituye las mezclas de máscara entre entrevistas y cortinas por cortes directos. El título y la mancheta entran con contraste de lectura. Una partitura original de piano y celesta acompaña los capítulos y las cápsulas. En la entrega definitiva, el blooper de coro enlaza directamente con el agradecimiento. El escudo oficial aparece en la apertura y el cierre. La [guía de producción](docs/v03_1/produccion.md) detalla la reproducción y las comprobaciones.
 
 [Escuchar la firma musical de apertura](docs/v03_1/firma-musical.ogg)
+
+![Apertura definitiva](docs/v03_1/cierre/apertura.jpg)
+
+![Detalle del agradecimiento definitivo](docs/v03_1/cierre/agradecimiento.jpg)
 
 ![Entrada del capítulo II en V03.1](docs/v03_1/entrada-capitulo-ii.jpg)
 
@@ -34,7 +38,8 @@ flowchart LR
   A[EDL y mezcla aprobada V03] --> C[Conformado V03.1]
   B[Cortinas y firma musical] --> R[Reel de los empalmes]
   R --> C
-  C --> M[Máster limpio y subtitulado]
+  C --> F[Corte de extra-cierre y escudo en apertura y cierre]
+  F --> M[Máster limpio y subtitulado]
   M --> Q[Decodificación y verificación de continuidad]
 ```
 
@@ -108,4 +113,4 @@ La [guía V03](docs/v03.md) detalla dependencias, archivos locales requeridos, c
 
 ## Disponibilidad
 
-El máster subtitulado, el limpio, el SRT, la miniatura, las cortinas y las hojas de contacto están en `renders/v03/` del entorno de producción. La publicación del video y sus materiales identificables queda sujeta a autorización.
+Los dos másteres definitivos y el SRT están en `renders/v03_1/definitivo/` del entorno de producción. Duración de entrega: 12:03.933. Los archivos aprobados de referencia permanecen en la carpeta superior. La publicación del video y sus materiales identificables queda sujeta a autorización.

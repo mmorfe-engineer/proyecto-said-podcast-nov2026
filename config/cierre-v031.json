@@ -1,0 +1,7 @@
+{
+  "remove": "extra-cierre",
+  "source": "bloopers_c.mp4",
+  "logo": "logo colegio/Logo_Colegio_Humboldt_(Caracas)-2425285198.png",
+  "logo_sha256": "ab9649a111a9d71268aa368db13b197e1d588d2089d9f0c5c025d924f05213c5",
+  "logo_cards": ["apertura", "agradecimiento"]
+}
