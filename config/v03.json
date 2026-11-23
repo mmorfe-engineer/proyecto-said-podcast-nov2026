@@ -1,0 +1,26 @@
+{
+  "remove": "extra-espontaneo",
+  "cards": {
+    "apertura": {"duration": 17, "number": 0},
+    "capitulo-1": {"duration": 8, "deck": "Los interrogatorios, los insultos y la manipulación muestran que la violencia empieza antes de la agresión física."},
+    "capitulo-2": {"duration": 8, "deck": "Los celos, el aislamiento y la cosificación revelan cómo el deseo de posesión daña los vínculos."},
+    "capitulo-3": {"duration": 8, "deck": "La vigilancia y la persecución pueden confundirse con gestos de afecto cuando se normaliza el control."},
+    "capitulo-4": {"duration": 8, "deck": "La perspectiva de Castel condiciona la lectura. ¿Qué cambia si atendemos a la voz de María?"},
+    "epilogo": {"duration": 10, "number": 0, "title": "Una pregunta que permanece", "deck": "¿Qué señales de control y aislamiento seguimos justificando en nombre del amor?"},
+    "creditos": {"duration": 9, "number": 0},
+    "agradecimiento": {"duration": 11, "number": 0, "prev_blooper": ["c", 6.92]}
+  },
+  "inserts": {
+    "violencia": [
+      {"id": "anatomia", "card": "capsule", "duration": 20, "number": 1, "title": "Anatomía de la violencia", "lines": [["PSICOLÓGICA", "Intimidar, aislar o dañar emocionalmente."], ["FÍSICA", "Causar o intentar causar daño corporal."], ["ECONÓMICA", "Controlar o restringir el acceso a recursos."]], "note": "Definiciones adaptadas de ONU Mujeres. El grupo aborda las dos primeras."}
+    ],
+    "obsesion": [
+      {"id": "mapa", "card": "map", "duration": 13, "number": 2, "title": "Mapa de la obsesión", "note": "Relaciones propuestas en la lectura del grupo."},
+      {"id": "evidencia", "card": "capsule", "duration": 14, "number": 4, "title": "La justificación de Castel", "lines": [["CITA TEXTUAL · CAPÍTULO XXXVIII", "«Tengo que matarte, María. Me has dejado solo.»"], ["LECTURA DEL GRUPO", "Castel convierte su soledad en una justificación de la agresión."]], "note": "Ernesto Sabato · El túnel · copia digital de la Biblioteca de Tavapy"}
+    ],
+    "narrador": [
+      {"id": "perspectiva", "card": "capsule", "duration": 16, "number": 4, "title": "La perspectiva del narrador", "lines": [["01 · ACONTECIMIENTOS RELATADOS", "Castel cuenta cómo mató a María."], ["02 · INTERPRETACIÓN DE CASTEL", "Organiza el relato desde su soledad y sus justificaciones."], ["03 · LECTURA CRÍTICA", "¿Qué queda fuera cuando solo él cuenta la historia?"]], "note": "Esquema editorial a partir de la intervención del video 6."}
+    ]
+  },
+  "audio_repair": {"id": "postura", "v02_windows": [[276.423, 276.515], [277.052, 277.153]], "high_band_gain_db": -7}
+}

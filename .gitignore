@@ -8,3 +8,5 @@
 __pycache__/
 
 /config/*.local.json
+/logo colegio/
+/config/identidad-v03.local.json

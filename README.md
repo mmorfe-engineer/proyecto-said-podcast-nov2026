@@ -1,73 +1,94 @@
-![El túnel, identidad gráfica de la V02](docs/banner-v02.jpg)
+![Portada editorial de El túnel](docs/galeria-v03/apertura.jpg)
 
-# EL TÚNEL
+# EL TÚNEL · V03
 
-**Cuando el control se disfraza de amor**
-Podcast grupal de análisis literario sobre la novela de Ernesto Sabato.
+Videopodcast de Literatura del Colegio Humboldt Caracas sobre la violencia de género en la novela de Ernesto Sabato. **Cuando el control se disfraza de amor.** La edición conserva la conversación aprobada e incorpora capítulos, cápsulas de lectura, identificación institucional y un cierre renovado.
 
-`V02` · `Python` · `Pillow` · `FFmpeg` · `1080p / 30 fps`
+![Versión V03](https://img.shields.io/badge/versi%C3%B3n-V03-8c4f42)
+![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776ab)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-libx264%20%2F%20libass-168446)
+![Resolución 1920×1080](https://img.shields.io/badge/resoluci%C3%B3n-1920%C3%971080-353740)
+![30 fps](https://img.shields.io/badge/fps-30-353740)
+![Auditoría local](https://img.shields.io/badge/auditor%C3%ADa-local-5f6368)
+![Entrega local](https://img.shields.io/badge/estado-entrega%20local-8c4f42)
 
-La V02 recupera el desarrollo de las intervenciones y la despedida del grupo. La puesta en escena **Charcoal Motion Editorial** enlaza la conversación con cuatro cortinas que animan trazo, textura, profundidad y tipografía. Los extras comienzan después del cierre conceptual. La obra termina con un agradecimiento animado.
+La prueba semestral I se evalúa en cuatro ejes. La [matriz](docs/V03_MATRIZ_RUBRICA.md) vincula los doce criterios con intervenciones y tiempos V03, diferencia cita, paráfrasis e interpretación y registra los límites del cotejo.
 
-## Montaje y control de calidad
+| Eje | Indicadores |
+|---|---|
+| Análisis literario | Manifestaciones de violencia, temas centrales y evidencia de la novela |
+| Perspectiva crítica | Postura frente a la violencia, vínculo con la realidad y reflexión del espectador |
+| Discurso audiovisual | Estructura, lenguaje y ritmo |
+| Producción | Audio, video y uso de los recursos audiovisuales |
 
-- [Comparativa V01–V02 y recuperación de diálogos](docs/v02.md)
-- [Método de producción y licencias](docs/produccion.md)
-- [Configuración editable de montaje](config/v02.json)
+## Galería
 
-Las imágenes publicables del proyecto muestran ilustraciones abstractas generadas por código. Las grabaciones, identificadores personales, subtítulos de origen y másteres se conservan localmente. La publicación audiovisual requiere autorización de los participantes.
+La galería muestra arte editorial creado para el proyecto. Las muestras de cierre y bloopers se generaron sin nombres ni retratos.
+
+| | |
+|---|---|
+| ![Capítulo I](docs/galeria-v03/capitulo-1.jpg) | ![Capítulo II](docs/galeria-v03/capitulo-2.jpg) |
+| ![Capítulo III](docs/galeria-v03/capitulo-3.jpg) | ![Capítulo IV](docs/galeria-v03/capitulo-4.jpg) |
+| ![Mapa de la obsesión](docs/galeria-v03/mapa.jpg) | ![Perspectiva del narrador](docs/galeria-v03/perspectiva.jpg) |
+| ![Bloopers](docs/galeria-v03/detras-de-camaras.jpg) | ![Agradecimiento](docs/galeria-v03/agradecimiento.jpg) |
+| ![Miniatura editorial](docs/galeria-v03/miniatura.jpg) | ![Evidencia textual](docs/galeria-v03/evidencia.jpg) |
+
+![Fotogramas sucesivos de la animación del capítulo III](docs/galeria-v03/motion.jpg)
+
+## Arquitectura
+
+**Flujo audiovisual**
 
 ```mermaid
-flowchart TD
-  A[Originales y tiempos de origen] --> B[EDL V02]
-  A --> C[Edición de subtítulos]
-  I[Identidad local] --> D[Cortinas y rótulos]
-  B --> D
-  B --> E[Segmentos de imagen y sonido]
-  D --> F[Máster limpio]
-  E --> F
-  C --> G[Máster subtitulado]
-  F --> G
-  G --> H[Auditoría y entregables]
+flowchart LR
+  A[Unidades de video V02] --> D[Conformado V03]
+  B[Cortinas y cápsulas] --> D
+  C[Mezcla y reparación localizada] --> D
+  D --> E[Máster limpio]
+  E --> F[Máster subtitulado]
 ```
 
-## Reproducción local
+**Renderizado**
 
-Requiere Python 3 con Pillow y NumPy, FFmpeg/FFprobe con libass y libx264, fontconfig, DejaVu Serif y Lato. La ingesta opcional puede crear borradores de subtítulos con Faster Whisper local. Para repetir la revisión existente, preservar los SRT de origen con sus identificadores de entrada.
-
-1. Colocar los ocho originales en `podcast_videos_raw/` y los extras en `bloopers/`.
-2. Copiar `config/identidad.example.json` a `config/identidad.local.json` y completar allí la identidad autorizada.
-3. Colocar los borradores de origen en `work/transcripciones/`.
-4. Ejecutar el pipeline en orden.
-
-```sh
-python3 scripts/ingest.py
-mkdir -p work/v02
-sha256sum podcast_videos_raw/*.mp4 bloopers/*.mp4 > work/v02/preservacion.sha256
-python3 scripts/v02.py dialogue
-python3 scripts/v02.py preview
-python3 scripts/v02.py clean
-python3 scripts/v02.py subtitled
-python3 scripts/v02.py audit
+```mermaid
+flowchart LR
+  A[Fotogramas Pillow] --> B[Muestras]
+  B --> C[Codificación de cortinas]
+  C --> D[Ensamblaje FFmpeg]
+  E[Caché V02] --> D
+  D --> F[Dos archivos MP4]
 ```
 
-| Ruta | Uso |
-|---|---|
-| `config/v02.json` | Ventanas de origen, cortinas y orden editorial |
-| `config/identidad.local.json` | Clase, institución y nombres autorizados, fuera de Git |
-| `scripts/v02_motion.py` | Ilustración, máscaras animadas y motivo musical original |
-| `work/v02/` | EDL resuelta, evidencias y material interno |
-| `renders/v02/` | Dos másteres, miniatura y cortinas individuales |
-| `subtitles/` | SRT conformado al montaje |
+**Control de calidad**
 
-La V01 se conserva como referencia. El pipeline de la V02 utiliza directorios propios. La salida H.264 en 1080p escala las fuentes de resolución original y conserva sus proporciones. Tipografías del sistema DejaVu Serif y Lato. Música, gráficos y animación generados localmente.
+```mermaid
+flowchart LR
+  A[EDL V02 y V03] --> B[Comparación de fuentes e intervalos]
+  C[Másteres y SRT] --> D[Decodificación y cotejo]
+  B --> E[Informe de conservación]
+  D --> F[Auditoría técnica]
+  G[Diálogo y fuentes] --> H[Matriz académica]
+```
 
-## Galería de cortinas
+**Configuración y generación**
 
-| I · La violencia empieza antes | II · La obsesión de poseer |
-|---|---|
-| ![Trazos convergentes](docs/galeria/capitulo-1.jpg) | ![Siluetas separadas](docs/galeria/capitulo-2.jpg) |
-| **III · Cuando el control parece amor** | **IV · ¿Quién cuenta la historia?** |
-| ![Laberinto de carbón](docs/galeria/capitulo-3.jpg) | ![Libro abierto](docs/galeria/capitulo-4.jpg) |
+```mermaid
+flowchart LR
+  A[Configuraciones V02 y V03] --> D[EDL V03]
+  B[Identidad local y recurso institucional] --> E[Gráfica y caché]
+  D --> E
+  D --> F[SRT conformado]
+  C[SRT revisado de V02] --> F
+```
 
-Los másteres y las capturas de la entrevista permanecen en la entrega local.
+## Reproducción y versiones
+
+La [guía V03](docs/v03.md) detalla dependencias, archivos locales requeridos, configuración, render, subtitulado, auditoría y derechos. El recorrido técnico pasa por `edl`, `preview`, `build` y `audit` en `scripts/v03.py`.
+
+- **V01** · Primer montaje y candidato audiovisual. [Producción](docs/produccion.md).
+- **V02** · Recuperación del diálogo grupal y consolidación de la identidad de carboncillo. [Referencia V02](docs/v02.md).
+- **V03** · Identidad institucional en texto, revisión pedagógica y cierre editorial.
+
+## Disponibilidad
+
+El máster subtitulado, el limpio, el SRT, la miniatura, las cortinas y las hojas de contacto están en `renders/v03/` del entorno de producción. La publicación del video y sus materiales identificables queda sujeta a autorización.
